@@ -9,6 +9,10 @@ const ApiLink = require('./src/refocus/apiLink');
 const Aspect = require('./src/refocus/aspect');
 const Sample = require('./src/refocus/sample');
 const Subject = require('./src/refocus/subject');
+
+const RefocusInstance = require('./src/refocus-collector/refocusInstance');
+const Registry = require('./src/refocus-collector/registry');
+const Repeater = require('./src/refocus-collector/repeater');
 const TransformArgs = require('./src/refocus-collector/transformArgs');
 
 /**
@@ -22,6 +26,9 @@ module.exports = {
     Subject,
   },
   'refocus-collector': {
+    RefocusInstance,
+    Registry,
+    Repeater,
     TransformArgs,
   },
 };
