@@ -7,14 +7,14 @@
  */
 
 /**
- * test/apiLink.js
+ * test/refocus/apiLink.js
  */
 'use strict';
 const clone = require('clone');
 const expect = require('chai').expect;
-const ApiLink = require('../src/apiLink');
+const ApiLink = require('../../src/refocus/apiLink');
 
-describe('test/apiLink.js >', (done) => {
+describe('test/refocus/apiLink.js >', (done) => {
   const good = {
     href: '/v1/aspects/99987bb6-24a4-43b6-8be6-c600203dbaf2',
     method: 'DELETE',

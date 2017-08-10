@@ -7,11 +7,11 @@
  */
 
 /**
- * src/transformArgs.js
+ * src/refocus-collector/transformArgs.js
  */
 const Joi = require('joi');
-const Aspect = require('./aspect');
-const Subject = require('./subject');
+const Aspect = require('../refocus/aspect');
+const Subject = require('../refocus/subject');
 
 module.exports = Joi.object().keys({
   ctx: Joi.object().required(),

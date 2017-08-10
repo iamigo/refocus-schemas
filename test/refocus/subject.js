@@ -7,14 +7,14 @@
  */
 
 /**
- * test/subject.js
+ * test/refocus/subject.js
  */
 'use strict';
 const clone = require('clone');
 const expect = require('chai').expect;
-const Subject = require('../src/subject');
+const Subject = require('../../src/refocus/subject');
 
-describe('test/subject.js >', (done) => {
+describe('test/refocus/subject.js >', (done) => {
   const good = {
     absolutePath: 'Vegetable.Root.Potato.Idaho.Spud',
     childCount: 0,

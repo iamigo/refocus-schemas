@@ -7,14 +7,14 @@
  */
 
 /**
- * test/aspect.js
+ * test/refocus/aspect.js
  */
 'use strict';
 const clone = require('clone');
 const expect = require('chai').expect;
-const Aspect = require('../src/aspect');
+const Aspect = require('../../src/refocus/aspect');
 
-describe('test/aspect.js >', (done) => {
+describe('test/refocus/aspect.js >', (done) => {
   const good = {
     id: '40087bb6-24a4-43b6-8be6-c600203dbaf2',
     isDeleted: '0',

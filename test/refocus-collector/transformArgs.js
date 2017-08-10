@@ -7,14 +7,14 @@
  */
 
 /**
- * test/transformArgs.js
+ * test/refocus-collector/transformArgs.js
  */
 'use strict';
 const clone = require('clone');
 const expect = require('chai').expect;
-const TransformArgs = require('../src/transformArgs');
+const TransformArgs = require('../../src/refocus-collector/transformArgs');
 
-describe('test/transformArgs.js >', (done) => {
+describe('test/refocus-collector/transformArgs.js >', (done) => {
   const good = {
     ctx: { x: 'y' },
     res: { body: 'abc', status: 200 },

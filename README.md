@@ -11,12 +11,23 @@ using `validate`/`assert`/`attempt` to perform the validation.
 npm install --save refocus-schemas
 ```
 
-## Example
+## Usage
+
+The module exports all the schemas in a nested structure like this:
+- refocus
+ - ApiLink
+ - Aspect
+ - Sample
+ - Subject
+- refocus-collector
+ - TransformArgs
+
+### Example
 
 To validate an Aspect:
 
 ```
-const Aspect = require('refocus-schemas').Aspect;
+const Aspect = require('refocus-schemas').refocus.Aspect;
 
 const myAspect = {
   name: 'Foo',

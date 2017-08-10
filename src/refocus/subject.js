@@ -7,9 +7,10 @@
  */
 
 /**
- * src/subject.js
+ * src/refocus/subject.js
  */
 const Joi = require('joi');
+const ApiLink = require('./apiLink');
 
 module.exports = Joi.object().keys({
   absolutePath: Joi.string().max(4096).required(),
@@ -34,7 +35,7 @@ module.exports = Joi.object().keys({
   parentId: Joi.string().guid(),
   parentAbsolutePath: Joi.string().max(4096),
   hierarchyLevel: Joi.number().min(1),
-  apiLinks: Joi.array(),
+  apiLinks: Joi.array().items(ApiLink),
   childCount: Joi.number().integer(),
   isDeleted: Joi.number(),
   sortBy: Joi.string(),

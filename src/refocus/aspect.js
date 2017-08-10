@@ -7,7 +7,7 @@
  */
 
 /**
- * src/aspect.js
+ * src/refocus/aspect.js
  */
 const Joi = require('joi');
 const ApiLink = require('./apiLink');

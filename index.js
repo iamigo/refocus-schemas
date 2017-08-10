@@ -5,19 +5,23 @@
  * For full license text, see LICENSE.txt file in the repo root or
  * https://opensource.org/licenses/BSD-3-Clause
  */
-const ApiLink = require('./src/apiLink');
-const Aspect = require('./src/aspect');
-const Sample = require('./src/sample');
-const Subject = require('./src/subject');
-const TransformArgs = require('./src/transformArgs');
+const ApiLink = require('./src/refocus/apiLink');
+const Aspect = require('./src/refocus/aspect');
+const Sample = require('./src/refocus/sample');
+const Subject = require('./src/refocus/subject');
+const TransformArgs = require('./src/refocus-collector/transformArgs');
 
 /**
  * index.js
  */
 module.exports = {
-  ApiLink,
-  Aspect,
-  Sample,
-  Subject,
-  TransformArgs,
+  refocus: {
+    ApiLink,
+    Aspect,
+    Sample,
+    Subject,
+  },
+  'refocus-collector': {
+    TransformArgs,
+  },
 };

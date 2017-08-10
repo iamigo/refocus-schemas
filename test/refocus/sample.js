@@ -7,14 +7,14 @@
  */
 
 /**
- * test/sample.js
+ * test/refocus/sample.js
  */
 'use strict';
 const clone = require('clone');
 const expect = require('chai').expect;
-const Sample = require('../src/sample');
+const Sample = require('../../src/refocus/sample');
 
-describe('test/sample.js >', (done) => {
+describe('test/refocus/sample.js >', (done) => {
   const good = {
     status: 'Timeout',
     createdAt: '2016-12-27T21:36:00.499Z',

@@ -7,7 +7,7 @@
  */
 
 /**
- * src/sample.js
+ * src/refocus/sample.js
  */
 const Joi = require('joi');
 const Aspect = require('./aspect');

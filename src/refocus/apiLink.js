@@ -7,7 +7,7 @@
  */
 
 /**
- * src/apiLink.js
+ * src/refocus/apiLink.js
  */
 const Joi = require('joi');
 
