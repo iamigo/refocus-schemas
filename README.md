@@ -2,8 +2,7 @@
 
 Schemas for validating Refocus artifacts using Joi.
 
-Joi (https://github.com/hapijs/joi) has comprehensive API documentation on
-using `validate`/`assert`/`attempt` to perform the validation.
+[Joi](https://github.com/hapijs/joi) has comprehensive API documentation on using `validate`/`assert`/`attempt` to perform the validation.
 
 ## Installation
 
@@ -15,12 +14,12 @@ npm install --save refocus-schemas
 
 The module exports all the schemas in a nested structure like this:
 - refocus
- - ApiLink
- - Aspect
- - Sample
- - Subject
+  - ApiLink
+  - Aspect
+  - Sample
+  - Subject
 - refocus-collector
- - TransformArgs
+  - TransformArgs
 
 ### Example
 
