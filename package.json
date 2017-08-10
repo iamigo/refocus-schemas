@@ -1,0 +1,21 @@
+{
+  "name": "refocus-schemas",
+  "version": "1.0.0",
+  "description": "Schemas for validation of various Refocus artifacts.",
+  "main": "index.js",
+  "scripts": {
+    "jscs": "./node_modules/jscs/bin/jscs src test",
+    "test": "npm run jscs && ./node_modules/.bin/mocha -R dot --recursive ./test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clone": "^2.1.1",
+    "joi": "^10.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "jscs": "^3.0.7",
+    "mocha": "^3.5.0"
+  }
+}
