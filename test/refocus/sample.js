@@ -111,4 +111,32 @@ describe('test/refocus/sample.js >', (done) => {
     expect(Sample.validate(s)).to.have.property('error')
       .to.have.property('name', 'ValidationError');
   });
+
+  it('err - string (not object)', () => {
+    expect(Sample.validate('abc')).to.have.property('error')
+    .to.have.property('name', 'ValidationError');
+  });
+
+  it('err - array (not string)', () => {
+    expect(Sample.validate([s])).to.have.property('error')
+      .to.have.property('name', 'ValidationError');
+  });
+
+  it('err - missing name', () => {
+    delete(s.name);
+    expect(Sample.validate(s)).to.have.property('error')
+    .to.have.property('name', 'ValidationError');
+  });
+
+  it('err - name too small', () => {
+    s.name = 'a';
+    expect(Sample.validate(s)).to.have.property('error')
+    .to.have.property('name', 'ValidationError');
+  });
+
+  it('err - name missing pipe character', () => {
+    s.name = 'abcdefg';
+    expect(Sample.validate(s)).to.have.property('error')
+    .to.have.property('name', 'ValidationError');
+  });
 });
