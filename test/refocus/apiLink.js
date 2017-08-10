@@ -12,7 +12,7 @@
 'use strict';
 const clone = require('clone');
 const expect = require('chai').expect;
-const ApiLink = require('../../src/refocus/apiLink');
+const ApiLink = require('../../index').refocus.ApiLink;
 
 describe('test/refocus/apiLink.js >', (done) => {
   const good = {

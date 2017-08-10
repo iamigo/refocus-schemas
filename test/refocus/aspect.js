@@ -12,7 +12,7 @@
 'use strict';
 const clone = require('clone');
 const expect = require('chai').expect;
-const Aspect = require('../../src/refocus/aspect');
+const Aspect = require('../../index').refocus.Aspect;
 
 describe('test/refocus/aspect.js >', (done) => {
   const good = {

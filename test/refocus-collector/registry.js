@@ -7,12 +7,12 @@
  */
 
 /**
- * test/refocus-collector/transformArgs.js
+ * test/refocus-collector/registry.js
  */
 'use strict';
 const clone = require('clone');
 const expect = require('chai').expect;
-const Registry = require('../../src/refocus-collector/registry');
+const Registry = require('../../index').refocusCollector.Registry;
 
 describe('test/refocus-collector/registry.js >', (done) => {
   const good = {

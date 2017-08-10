@@ -12,7 +12,7 @@
 'use strict';
 const clone = require('clone');
 const expect = require('chai').expect;
-const Subject = require('../../src/refocus/subject');
+const Subject = require('../../index').refocus.Subject;
 
 describe('test/refocus/subject.js >', (done) => {
   const good = {

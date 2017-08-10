@@ -7,12 +7,13 @@
  */
 
 /**
- * test/refocus-collector/transformArgs.js
+ * test/refocus-collector/refocusInstance.js
  */
 'use strict';
 const clone = require('clone');
 const expect = require('chai').expect;
-const RefocusInstance = require('../../src/refocus-collector/refocusInstance');
+const RefocusInstance =
+  require('../../index').refocusCollector.RefocusInstance;
 
 describe('test/refocus-collector/refocusInstance.js >', (done) => {
   const good = {
