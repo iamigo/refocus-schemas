@@ -18,7 +18,10 @@ The module exports all the schemas in a nested structure like this:
   - Aspect
   - Sample
   - Subject
-- refocus-collector
+- refocusCollector
+  - RefocusInstance
+  - Registry
+  - Repeater
   - TransformArgs
 
 ### Example

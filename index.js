@@ -25,7 +25,7 @@ module.exports = {
     Sample,
     Subject,
   },
-  'refocus-collector': {
+  refocusCollector: {
     RefocusInstance,
     Registry,
     Repeater,
