@@ -13,7 +13,8 @@ const Joi = require('joi');
 const ApiLink = require('./apiLink');
 
 module.exports = Joi.object().keys({
-  name: Joi.string().regex(/^[0-9A-Za-z_\\-]{1,60}/).required(),
+  name: Joi.string().regex(/^[0-9A-Za-z_\\-]{1,60}/).required()
+    .description('Unique name'),
   description: Joi.string().max(4096),
   helpEmail: Joi.string().email(),
   helpUrl: Joi.string().max(2082).uri(),
@@ -28,7 +29,7 @@ module.exports = Joi.object().keys({
   rank: Joi.number().integer(),
   timeout: Joi.string().max(8).regex(/^[0-9]+[smhdSMHD]$/),
   valueLabel: Joi.string().max(10),
-  valueType: Joi.string().max(7).valid(['BOOLEAN', 'NUMERIC', 'PERCENT']),
+  valueType: Joi.string().valid(['BOOLEAN', 'NUMERIC', 'PERCENT']),
   createdBy: Joi.string(),
   createdAt: Joi.string(),
   updatedAt: Joi.string(),

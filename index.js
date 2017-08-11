@@ -8,6 +8,10 @@
 const ApiLink = require('./src/refocus/apiLink');
 const Aspect = require('./src/refocus/aspect');
 const Sample = require('./src/refocus/sample');
+const SampleGenerator = require('./src/refocus/sampleGenerator');
+const SampleGeneratorTemplate =
+  require('./src/refocus/sampleGeneratorTemplate');
+const SgtContextDefValue = require('./src/refocus/sgtContextDefValue');
 const Subject = require('./src/refocus/subject');
 
 const RefocusInstance = require('./src/refocus-collector/refocusInstance');
@@ -23,6 +27,9 @@ module.exports = {
     ApiLink,
     Aspect,
     Sample,
+    SampleGenerator,
+    SampleGeneratorTemplate,
+    SgtContextDefValue,
     Subject,
   },
   refocusCollector: {

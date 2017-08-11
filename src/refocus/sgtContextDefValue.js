@@ -7,15 +7,13 @@
  */
 
 /**
- * src/refocus/apiLink.js
+ * src/refocus/sgtContextDefValue.js
  */
 const Joi = require('joi');
 
 module.exports = Joi.object().keys({
-  href: Joi.string().required()
-    .description('URL that uniquely defines the resource'),
-  method: Joi.string().required()
-    .allow(['DELETE', 'GET', 'PATCH', 'POST', 'PUT']),
-  rel: Joi.string().required()
-    .description('Relationship'),
+  description: Joi.string().required(),
+  required: Joi.boolean(),
+  encrypt: Joi.boolean(),
+  default: Joi.any(),
 });
